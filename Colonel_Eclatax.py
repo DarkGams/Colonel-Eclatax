@@ -60,7 +60,7 @@ print(Center.Center(Colorate.Horizontal(Colors.green_to_blue, (banner), 1)))
 
 time.sleep(3)
 
-os.system("cls")
+os.system('cls' if os.name == 'nt' else 'clear')
 
 banner_2 = (Center.XCenter(Box.DoubleCube("""  ______   ______    __        ______   .__   __.  _______  __          _______   ______  __          ___   .___________.    ___      ___   ___ 
  /      | /  __  \  |  |      /  __  \  |  \ |  | |   ____||  |        |   ____| /      ||  |        /   \  |           |   /   \     \  \ /  / 
@@ -73,7 +73,7 @@ btn = (Center.Center(Box.DoubleCube("Appuyez sur ENTRER pour commencer")))
 Anime.Fade((banner_2 + btn), color=Colors.green_to_blue, mode=Colorate.Diagonal, enter=True)
 print(banner_2 + btn)
 
-os.system("cls")
+os.system('cls' if os.name == 'nt' else 'clear')
 
 sentence_1 = (Colors.blue + "\nLe colonel Eclatax vous souhaite la bienvenue a bord !\nVous etes ici pour fummer un bon bedo et voir a quel point vous resistez a la fumette ?\n\nLes regles sont simples :\n> Vous fummez autant de joints qu'il y a de personnes\n> Quand je dis <<taff>> vous ferez une taff\n> Quand je dirais <<pomme-de-terre>> vous ferez un turbo de fou fou batard dans votre main !\n> Ne recrachez pas tant que je n'ai pas dit <<Recrachez>>\n> Si vous ne tenez pas jusqu'au bout vous etes une merde\n\n")
 
@@ -117,8 +117,8 @@ _  /    /  __// /__  _  /    / /_/ / / /__  _  / / //  __/__  /_
 		game = random.choice(var)
 		print(Center.Center(Box.DoubleCube(game)))
 		time.sleep(4)
-		os.system("cls")
+		os.system('cls' if os.name == 'nt' else 'clear')
 
 if ENTER == '':
-	os.system("cls")
+	os.system('cls' if os.name == 'nt' else 'clear')
 	level_1()
